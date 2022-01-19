@@ -27,4 +27,4 @@ Route::get('/about', function () {
 
 Route::get('/gallery', function () {
     return view("gallery");
-});
+});echo "# 6-24-Nizar" >> README.md
