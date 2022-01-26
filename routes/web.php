@@ -18,13 +18,22 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    return view("home");
+    return view('home', [
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/about', function () {
-    return view("about");
+    return view('about' , [
+        "title" => "About",
+        "nama" => "Nizar Ali Rifai",
+        "email" => "nizarali@gmail.com",
+        "gambar" => "Nizar.jpg"
+    ]);
 });
 
 Route::get('/gallery', function () {
-    return view("gallery");
-});echo "# 6-24-Nizar" >> README.md
+    return view('gallery', [
+        "title" => "Gallery"
+    ]);
+});
