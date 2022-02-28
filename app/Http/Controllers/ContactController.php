@@ -14,9 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('contacts', [
-            "title" => "Contacts"
-        ]);
+        return view('admin/contacts/index');
     }
 
     /**
@@ -26,7 +24,9 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        return view('contacts', [
+            "title" => "Contacts"
+        ]);
     }
 
     /**
